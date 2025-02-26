@@ -1,4 +1,4 @@
-class DemoTriangulo {
+public class DemoTriangulo {
     public static void main(String[] args) {
         Triangulo t1, t2, t3;
 

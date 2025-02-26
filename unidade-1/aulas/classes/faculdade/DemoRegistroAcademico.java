@@ -1,4 +1,4 @@
-class DemoRegistroAcademico {
+public class DemoRegistroAcademico {
     public static void main(String[] args) {
         RegistroAcademico michael = new RegistroAcademico();
 

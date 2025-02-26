@@ -1,17 +1,17 @@
-class RegistroAcademico {
-    String nome;
-    String matricula;
-    int codigoCurso;
-    float percentualDeCobranca;
+public class RegistroAcademico {
+    private String nome;
+    private String matricula;
+    private int codigoCurso;
+    private float percentualDeCobranca;
 
-    void inicializaRegistroAcademico(String n, String m, int c, float p) {
+    public void inicializaRegistroAcademico(String n, String m, int c, float p) {
         nome = n;
         matricula = m;
         codigoCurso = c;
         percentualDeCobranca = p;
     }
 
-    float calculaMensalidade() {
+    public float calculaMensalidade() {
         return 100 * codigoCurso * percentualDeCobranca;
     }
 }
