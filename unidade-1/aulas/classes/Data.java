@@ -3,7 +3,7 @@ public class Data {
     private int mes;
     private int ano;
 
-    private boolean dataEhValida() {
+    public boolean dataEhValida() {
         return (dia >= 1 && dia <= 31 && mes >= 1 && mes <= 12 && ano > 0);
     }
 

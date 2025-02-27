@@ -1,9 +1,9 @@
-class Aluno {
-    String matricula;
-    String nome;
-    float prova1;
-    float prova2;
-    float trabalho;
+public class Aluno {
+    private String matricula;
+    private String nome;
+    private float prova1;
+    private float prova2;
+    private float trabalho;
 
     Aluno(String matricula, String nome, float prova1, float prova2, float trabalho) {
         this.matricula = matricula;
@@ -13,11 +13,11 @@ class Aluno {
         this.trabalho = (trabalho < 0) ? 0.0f : trabalho;
     }
 
-    float media() {
+    public float media() {
         return (prova1 * 2.5f + prova2 * 2.5f + trabalho * 2) / 7;
     }
 
-    float provaFinal() {
+    public float provaFinal() {
         float mediaParcial = this.media();
 
         if (mediaParcial < 3 || mediaParcial >= 7) {
