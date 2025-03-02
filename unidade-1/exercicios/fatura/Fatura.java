@@ -11,7 +11,7 @@ public class Fatura {
         precoUni = (p > 0) ? p : 0.0f;
     }
 
-    private float calculaTotal() {
+    public float calculaTotal() {
         return quant * precoUni;
     }
 
