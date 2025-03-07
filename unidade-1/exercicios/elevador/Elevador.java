@@ -5,7 +5,7 @@ public class Elevador {
     private int capacidade;
 
     Elevador(int totalAndares, int capacidade) {
-        this.totalAndares = (totalAndares > 0) ? totalAndares : 2;
+        this.totalAndares = (totalAndares > 1) ? totalAndares : 2;
         this.capacidade = (capacidade > 0) ? capacidade : 1;
         this.andarAtual = 1;
         this.quantPessoas = 0;

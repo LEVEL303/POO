@@ -10,14 +10,13 @@ public class Generica <T> {
     }
 
     public int quantIguais() {
-        if(atributo1.equals(atributo2) && atributo1.eqauls(atributo3)) {
+        if(atributo1.equals(atributo2) && atributo1.equals(atributo3)) {
             return 3;
-        } else if(!atributo1.eqauls(atributo2) && !atributo1.eqauls(atributo3) && !atributo2.eqauls(atributo3)) {
-            return 0;
-        } else {
+        } else if(atributo1.equals(atributo2) || atributo1.equals(atributo3) || atributo2.equals(atributo3)) {
             return 2;
+        } else {
+            return 0;
         }
-
     }
 
     public void imprimirAtributos() {

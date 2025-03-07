@@ -7,7 +7,7 @@ public class Triangulo {
     public void inicializaTriangulo(double l1, double l2, double l3, String d) {
         lado1 = l1;
         lado2 = l2;
-        lado3 = l3
+        lado3 = l3;
         desc = d;
     }
 
