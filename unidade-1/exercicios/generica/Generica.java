@@ -10,9 +10,9 @@ public class Generica <T> {
     }
 
     public int quantIguais() {
-        if(atributo1.equals(atributo2) && atributo1.equals(atributo3)) {
+        if (atributo1.equals(atributo2) && atributo1.equals(atributo3)) {
             return 3;
-        } else if(atributo1.equals(atributo2) || atributo1.equals(atributo3) || atributo2.equals(atributo3)) {
+        } else if (atributo1.equals(atributo2) || atributo1.equals(atributo3) || atributo2.equals(atributo3)) {
             return 2;
         } else {
             return 0;

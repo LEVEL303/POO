@@ -5,11 +5,13 @@ public class DemoIgual {
         } else {
             System.out.println("Não são iguais");
         }
+
         if(Igual.ehIgual("carro", "carro")) {
             System.out.println("São iguais");
         } else {
             System.out.println("Não são iguais");
         }
+
         if(Igual.ehIgual(3, 3)) {
             System.out.println("São iguais");
         } else {
