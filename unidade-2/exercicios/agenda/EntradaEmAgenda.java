@@ -21,10 +21,6 @@ public class EntradaEmAgenda {
     }
 
     public boolean ehNoDia(int dia, int mes, int ano) {
-        if (this.dia == dia && this.mes == mes && this.ano == ano) {
-            return true;
-        } else {
-            return false;
-        }
+        return (this.dia == dia && this.mes == mes && this.ano == ano);
     }
 }

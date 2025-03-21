@@ -8,12 +8,7 @@ public class ContagemCaracter {
 
         for(char c : caracteres) {
             if(c != ' ') {
-                if(!mapa.containsKey(c)) {
-                    mapa.put(c, 1);
-                } else {
-                    int valor = mapa.get(c);
-                    mapa.put(c, valor + 1);
-                }
+                mapa.put(c, mapa.getOrDefault(c, 0) + 1);
             }
         }
 

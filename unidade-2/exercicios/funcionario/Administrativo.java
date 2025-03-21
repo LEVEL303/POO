@@ -1,9 +1,17 @@
 public class Administrativo extends Assistente {
+    private String turno;
     private float adicionalNoturno;
 
     public Administrativo(String nome, float salario, String numeroDeMatricula, float adicionalNoturno) {
         super(nome, salario, numeroDeMatricula);
+        this.turno = "Noturno";
         this.adicionalNoturno = adicionalNoturno;
+    }
+
+    public Administrativo(String nome, float salario, String numeroDeMatricula) {
+        super(nome, salario, numeroDeMatricula);
+        this.turno = "Matutino";
+        this.adicionalNoturno = 0.0F;
     }
 
     public float ganhoAnual() {
@@ -11,6 +19,6 @@ public class Administrativo extends Assistente {
     }
 
     public String toString() {
-        return super.toString() + "; Adicional Noturno: " + adicionalNoturno;
+        return super.toString() + "; Turno: " + turno + "; Adicional Noturno: " + adicionalNoturno;
     }
 }
